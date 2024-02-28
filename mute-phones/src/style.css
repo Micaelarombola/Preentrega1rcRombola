@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: white
+    
+}
+
+
+header .containerBrand{
+    border: 1px solid black;
+    width: 20%;
+    max-width: 200px;    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+header .containerBrand img{
+    max-width: 100%;
+    transform: scale(0.5);
+}
+
+header .containerItemList{
+    border: 1px solid black;
+    width: 60%;
+    min-width: 100px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+
+}
+
+header .containerItemList ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .containerItemList ul li {
+    
+    margin: 10px;
+    transition: color 0.3s; /* Agrega transición para suavizar el cambio de color */
+}
+
+header .containerItemList ul li:hover {
+    color: #00FF00; /* Cambia el color del texto al pasar el ratón */
+}
+
+header .containerCart{
+    border: 1px solid black;
+    width: 20%;
+    min-width: 200px;
+    height: 90%;
+}
+
+header .containerCart {
+    width: 10%;
+    height: 91%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+header .containerCart .cantCart {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+}
+
+/* Media Query para dispositivos pequeños (móviles) */
+@media screen and (max-width: 600px) {
+    header .containerBrand, header .containerItemList, header .containerCart {
+        width: 100%; /* Ajusta el ancho al 100% en dispositivos pequeños */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    header .containerBrand img {
+        max-width: 100%;
+        height: auto;
+    }
+}
